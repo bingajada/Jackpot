@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Jackpot</title>
   </head>
   <body>
@@ -11,16 +12,21 @@
       <h1>Jack-Pot</h1>
 
       <div class="container">
-        <div class="slot1">a</div>
-        <div class="slot2">B</div>
-        <div class="slot3">c</div>
+        <div class="slot1">G</div>
+        <div class="slot2">O</div>
+        <div class="slot3">!</div>
         <div id="linha" style="position: absolute">linha</div>
       </div>
 
-      <button>Girar</button>
-      <div style="display: none;">
-        <button>Maior</button>
-        <button>Menor</button>
+      <div class="upperLower">0</div>
+
+      <div>
+        <button onclick="SpinAll()" id="Botao">Girar</button>
+      </div>
+
+      <div id="Guess">
+        <button onclick="Chutar('maior')">Maior</button>
+        <button onclick="Chutar('menor')">Menor</button>
       </div>
     </section>
   </body>
